@@ -1,3 +1,6 @@
+# TODO add a description
+# TODO add an anti-strategy pattern
+
 from abc import abstractmethod, ABC
 
 
