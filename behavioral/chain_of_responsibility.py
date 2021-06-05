@@ -25,11 +25,14 @@ class HandleAuthentication(Handler):
     def __init__(self, next_handler):
         super().__init__(next_handler)
 
-    def set_next_handler(self, next_handler):
-        self.__next_handler = next_handler
-
     def handle(self, request, data):
-        pass
+        print('Handling Authentication')
+
+        # if self.next_handler is not None:
+        #     self.next_handler.handle(request, data)
+        #
+        # else:
+        #     print('Done')
 
 
 if __name__ == '__main__':
