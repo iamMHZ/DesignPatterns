@@ -93,6 +93,13 @@ class UserPermissionHandler(Handler):
         return self.check_next(request)
 
 
+# TODO
+class WebServer:
+
+    def __init__(self, initial_handler):
+        pass
+
+
 if __name__ == '__main__':
     user = User('iam_mhz', '12345')
 
