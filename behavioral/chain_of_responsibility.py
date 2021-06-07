@@ -8,15 +8,15 @@ from abc import ABC
 class Handler(ABC):
 
     def __init__(self, next_handler=None):
-        self.__next_handler = next_handler
+        self._next_handler = next_handler
 
     def add_next_handler(self, next_handler):
-        self.__next_handler = next_handler
+        self._next_handler = next_handler
         return next_handler
 
     @property
     def next_handler(self):
-        return self.__next_handler
+        return self._next_handler
 
     def handle(self, request):
         pass
@@ -26,7 +26,6 @@ class User:
 
     def __init__(self, username, password):
         self.__user_name = username
-
 
 
 class Request:
@@ -41,7 +40,6 @@ class Request:
     @property
     def user(self):
         return self.__user
-
 
 
 class AuthenticationHandler(Handler):
