@@ -64,10 +64,6 @@ class ImageStorage:
         """Setter for the self.__compressor_algorithm"""
         self.__compressor_algorithm = compressor_algorithm
 
-    @compressor_algorithm.getter
-    def compressor_algorithm(self):
-        return self.__compressor_algorithm
-
     @property
     def filter_algorithm(self):
         """Getter for the self.__filter_algorithm"""
@@ -85,4 +81,4 @@ if __name__ == '__main__':
         BlackAndWhiteFilterStrategy()
     )
 
-    storage.store('file path')
+    storage.store('/tmp')
