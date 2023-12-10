@@ -1,4 +1,4 @@
-## Design Patterns in Python
+## Playground for learning more about Design Patterns
 
 #### [Behavioral Patterns](./behavioral/):
 
