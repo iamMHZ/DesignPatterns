@@ -1,7 +1,3 @@
-# TODO add anti-chain and docs
-# TODO add descriptions
-# TODO add doc string
-
 from abc import ABC
 
 
@@ -93,9 +89,9 @@ class UserPermissionHandler(Handler):
         return self.check_next(request)
 
 
-# TODO
 class WebServer:
 
+    # TODO
     def __init__(self, initial_handler):
         pass
 
